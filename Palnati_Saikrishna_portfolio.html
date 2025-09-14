@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material Dark Deck • Palnati Saikrishna</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f1115;--panel:#141820;--ink:#e6e8ef;--muted:#a6adbb;--accent:#00e5ff;--amber:#ffb300}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial}
+  header{padding:28px 20px;border-bottom:1px solid #1f2330;background:linear-gradient(180deg,rgba(0,229,255,.07),transparent)}
+  h1{margin:0;font-size:28px} .sub{color:var(--muted)}
+  .wrap{max-width:1100px;margin:0 auto;padding:20px;display:grid;gap:20px;grid-template-columns: 1fr}
+  .kpis{display:grid;gap:12px;grid-template-columns: repeat(auto-fit,minmax(180px,1fr))}
+  .kpi{background:var(--panel);border:1px solid #1f2330;border-radius:16px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+  .kpi i{color:var(--amber)} .kpi b{font-size:18px}
+  .section{background:var(--panel);border:1px solid #1f2330;border-radius:16px;padding:18px}
+  .section h2{margin:0 0 10px;color:var(--accent)}
+  .grid{display:grid;gap:14px;grid-template-columns: repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:#0f141b;border:1px solid #242a39;border-radius:14px;padding:14px}
+  .progress{height:8px;background:#1f2330;border-radius:8px;overflow:hidden}
+  .progress>span{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--accent))}
+  ul{margin:8px 0 0 18px}
+  .chip{display:inline-block;padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:#0f141b;border:1px solid #2a3142}
+</style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <img src="Palanti SaiKrishna_Portfolio_Profile.png" alt="Profile Photo" 
+           style="width:80px;height:80px;border-radius:50%;border:3px solid #00e5ff;object-fit:cover;">
+      <div>
+        <h1>Palnati Saikrishna</h1>
+        <div class="sub">Software Engineer • Backend • Cloud • Security</div>
+      </div>
+    </div>
+  </header>
+  <div class="wrap">
+    <section class="kpis">
+      <div class="kpi"><i class="fa-solid fa-code"></i> <b>Java, Python, SQL</b><br/><small>Primary stack</small></div>
+      <div class="kpi"><i class="fa-solid fa-cloud"></i> <b>AWS</b><br/><small>EC2, S3, IAM</small></div>
+      <div class="kpi"><i class="fa-solid fa-shield-halved"></i> <b>Security</b><br/><small>Encrypted search</small></div>
+      <div class="kpi"><i class="fa-solid fa-database"></i> <b>MySQL</b><br/><small>Relational DB</small></div>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>Ambitious CSE graduate with interest in backend development, cloud, and secure systems.</p>
+    </section>
+
+    <section class="section">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card"><i class="fa-solid fa-code"></i> <b>Web Development</b><br/>Java, Python, SQL, APIs</div>
+        <div class="card"><i class="fa-solid fa-cloud"></i> <b>Cloud Solutions</b><br/>AWS EC2, S3, IAM, Deployments</div>
+        <div class="card"><i class="fa-solid fa-chart-line"></i> <b>Data Analysis</b><br/>Pandas, NumPy, Matplotlib</div>
+        <div class="card"><i class="fa-solid fa-lock"></i> <b>Security & Encryption</b><br/>Encrypted search</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div>Java<div class="progress"><span style="width:90%"></span></div></div>
+      <div>Python<div class="progress"><span style="width:85%"></span></div></div>
+      <div>SQL<div class="progress"><span style="width:80%"></span></div></div>
+      <div>AWS<div class="progress"><span style="width:75%"></span></div></div>
+      <div>HTML/CSS<div class="progress"><span style="width:70%"></span></div></div>
+      <div style="margin-top:8px"><span class="chip">Data Structures</span><span class="chip">Data Security</span><span class="chip">Encrypted Search</span><span class="chip">Web Services</span></div>
+    </section>
+
+    <section class="section">
+      <h2>Academic Project</h2>
+      <div class="card">
+        <b>Verifiable Semantic Search Scheme Using Optimal Matching on Encrypted Public Cloud Data (2023)</b>
+        <ul>
+          <li>Secure encrypted-data search in public cloud environments.</li>
+          <li>Semantic keyword matching for accuracy.</li>
+          <li>Implemented encryption standards; validated performance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card"><i class="fa-solid fa-bolt"></i> AWS Workshop – EC2, S3, IAM, scalability & security</div>
+        <div class="card"><i class="fa-solid fa-database"></i> Data Analysis with Python – Pandas, NumPy, Matplotlib, Seaborn</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="card">
+        <b>Customer Service & Feedback Response Collector – Automobile Shop, Nellore</b>
+        <ul>
+          <li>Collected and analyzed customer feedback to identify service gaps.</li>
+          <li>Strengthened CRM, communication, and problem-resolution skills.</li>
+          <li>Customer-focused approach relevant to IT support.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
